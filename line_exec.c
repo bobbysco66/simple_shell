@@ -2,13 +2,13 @@
 
 
 /**
- * splitstring - splits a string and makes it an array of pointers to words
+ * stringparser - splits a string and makes it an array of pointers to words
  * @str: the string to be split
  * @delim: the delimiter
  * Return: array of pointers to words
  */
 
-char **splitstring(char *str, const char *delim)
+char **stringparser(char *str, const char *delim)
 {
 	int i, wn;
 	char **array;
@@ -135,4 +135,4 @@ void freearv(char **arv)
 		free(arv[i]);
 	free(arv);
 }
-git add .
+
