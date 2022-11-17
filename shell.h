@@ -31,8 +31,8 @@ extern char **environ;
  */
 typedef struct list_path
 {
-  char *dir;
-  struct list_path *p;
+char *dir;
+struct list_path *p;
 } list_path;
 
 
@@ -48,8 +48,8 @@ char *_which(char *filename, list_path *head);
  */
 typedef struct mybuild
 {
-  char *name;
-  void (*func)(char **);
+char *name;
+void (*func)(char **);
 } mybuild;
 
 void(*checkbuild(char **arv))(char **arv);
